@@ -1,8 +1,8 @@
 export const discoveryCallUrl = '#contact';
 
 export const navLinks = [
-  { id: 'solutions', title: 'Solutions' },
-  { id: 'use-cases', title: 'Use Cases' },
+  { id: 'solutions', title: 'Services' },
+  { id: 'use-cases', title: 'Support' },
   { id: 'process', title: 'How We Work' },
   { id: 'about', title: 'About' },
   { id: 'faq', title: 'FAQ' },
@@ -10,166 +10,166 @@ export const navLinks = [
 
 export const challenges = [
   {
-    title: 'Repetitive work',
-    text: 'Skilled people lose hours to copying, checking, and re-entering the same information.',
+    title: 'Failures go unnoticed',
+    text: 'An agent answers poorly or an automation stops, and the team only finds out from a colleague or customer.',
   },
   {
-    title: 'Scattered information',
-    text: 'Customer, project, and operational data lives in apps that rarely talk to each other.',
+    title: 'No clear owner',
+    text: 'The person who set the system up has moved on, and no one is sure how it is supposed to work.',
   },
   {
-    title: 'Manual handoffs',
-    text: 'Every email, spreadsheet, and status update between teams adds delay and room for error.',
+    title: 'Broken connections',
+    text: 'A tool update, expired access, or changed field stops information moving between systems.',
   },
   {
-    title: 'Stalled AI pilots',
-    text: 'Promising AI experiments never become dependable tools that teams use every day.',
+    title: 'Out-of-date behavior',
+    text: 'Instructions, knowledge, and business rules drift, so outputs become less useful over time.',
   },
   {
-    title: 'Growth without more complexity',
-    text: 'Scaling output usually means adding headcount, tools, and process overhead.',
+    title: 'Fixes stay reactive',
+    text: 'Issues are patched one by one, without a routine for watching, documenting, and improving what is already running.',
   },
 ];
 
 export const solutions = [
   {
-    id: 'solution-automation',
-    imgUrl: '/solution-automation.svg',
-    iconUrl: '/icon-workflow.svg',
-    label: 'AI Workflow Automation',
-    title: 'Fewer manual steps, faster handoffs',
-    description: 'We turn repetitive processes such as data entry, document handling, inquiry routing, CRM updates, and recurring reports into connected workflows that run reliably in the background.',
+    id: 'service-watch',
+    imgUrl: '/tai-forge-website-images/tai-forge-service-watch.svg',
+    iconUrl: '/icon-target.svg',
+    label: 'AI Watch',
+    title: 'See what your AI is doing',
+    description: 'We monitor existing agents, automations, and connected tools for failed runs, unusual outputs, and broken handoffs, and keep a record of what needs attention.',
   },
   {
-    id: 'solution-agents',
-    imgUrl: '/solution-agents.svg',
-    iconUrl: '/icon-agent.svg',
-    label: 'Custom AI Agents',
-    title: 'AI that helps your team get work done',
-    description: 'Purpose-built AI agents that retrieve knowledge, analyze documents, draft responses, and coordinate multi-step tasks, with human approvals and clear permissions wherever decisions matter.',
+    id: 'service-resolve',
+    imgUrl: '/tai-forge-website-images/tai-forge-service-resolve.svg',
+    iconUrl: '/icon-check.svg',
+    label: 'AI Resolve',
+    title: 'Troubleshoot what stops working',
+    description: 'When something fails, we trace the agent, automation, or integration, explain what we find, and work through a fix with your team.',
   },
   {
-    id: 'solution-integration',
-    imgUrl: '/solution-integration.svg',
-    iconUrl: '/icon-integration.svg',
-    label: 'Business Systems Integration',
-    title: 'Get more from the software you already use',
-    description: 'We connect CRMs, ERPs, spreadsheets, email, document storage, and support tools so information moves between systems without constant copying and pasting.',
+    id: 'service-maintain',
+    imgUrl: '/tai-forge-website-images/tai-forge-service-maintain.svg',
+    iconUrl: '/icon-layers.svg',
+    label: 'AI Maintain',
+    title: 'Keep existing systems in care',
+    description: 'We handle upkeep for the systems you already run: access, documentation, exception paths, and the adjustments that keep them aligned with how your team works.',
   },
   {
-    id: 'solution-operations',
-    imgUrl: '/solution-operations.svg',
+    id: 'service-optimize',
+    imgUrl: '/tai-forge-website-images/tai-forge-service-optimize.svg',
     iconUrl: '/icon-optimize.svg',
-    label: 'AI Operations & Optimization',
-    title: 'Automations that keep improving',
-    description: 'After launch, we monitor, maintain, and refine your workflows, handle exceptions, document how everything works, train your team, and help you expand to new processes.',
+    label: 'AI Optimize',
+    title: 'Improve what you already use',
+    description: 'We review how your AI is used and suggest practical refinements to instructions, steps, and connections as your tools and processes change.',
   },
 ];
 
 export const processSteps = [
   {
-    title: 'Discover',
-    text: 'We learn how your business runs, identify repetitive work, and prioritize opportunities by value, complexity, and feasibility.',
+    title: 'Assess',
+    text: 'We review the agents, automations, and integrations already in place, how your team uses them, and where they need attention.',
   },
   {
-    title: 'Design',
-    text: 'We map the process, choose the right AI and automation approach, define integrations, and decide where human oversight belongs.',
+    title: 'Monitor',
+    text: 'We watch for failed runs, broken connections, and outputs that no longer match the task.',
   },
   {
-    title: 'Build and Integrate',
-    text: 'We implement the workflow, connect your existing systems, and test it against real-world cases before your team relies on it.',
+    title: 'Troubleshoot',
+    text: 'We trace the issue, explain what we find, and work on a fix for the existing setup.',
   },
   {
     title: 'Optimize',
-    text: 'We monitor performance, resolve issues, evaluate outcomes, and improve the solution as your needs evolve.',
+    text: 'We refine instructions, steps, and connections as your tools, data, and processes change.',
   },
 ];
 
 export const differentiators = [
   {
     imgUrl: '/icon-target.svg',
-    title: 'Business outcomes first',
-    subtitle: 'We start with a real operational problem, not an AI tool looking for a use case.',
-  },
-  {
-    imgUrl: '/icon-layers.svg',
-    title: 'Designed around your workflows',
-    subtitle: 'Solutions fit your existing processes, systems, and business requirements.',
+    title: 'Existing systems first',
+    subtitle: 'We start with the agents, automations, and integrations your business already uses.',
   },
   {
     imgUrl: '/icon-check.svg',
-    title: 'Built for practical use',
-    subtitle: 'We prioritize integration, testing, reliability, and the right level of human oversight.',
+    title: 'Technical support when it breaks',
+    subtitle: 'When a run fails or a connection drops, we investigate and help restore the current setup.',
+  },
+  {
+    imgUrl: '/icon-layers.svg',
+    title: 'Maintenance, not one-off patches',
+    subtitle: 'Documentation, exception handling, and routine care sit alongside troubleshooting.',
   },
   {
     imgUrl: '/icon-growth.svg',
-    title: 'Designed to evolve',
-    subtitle: 'Start with one focused use case, then improve and expand as results become clear.',
+    title: 'Improvement on what you have',
+    subtitle: 'We look for practical refinements to the systems already in use as your work changes.',
   },
 ];
 
 export const useCases = [
   {
-    title: 'Inquiries to organized CRM records',
-    subtitle: 'Capture incoming leads and requests, extract the key details, and create or update CRM records automatically.',
+    title: 'An agent answers inconsistently',
+    subtitle: 'Responses no longer match your approved knowledge or the way the team expects the agent to help.',
   },
   {
-    title: 'Document extraction, ready for review',
-    subtitle: 'Pull information from invoices, forms, and contracts and prepare it for a quick human check.',
+    title: 'A scheduled automation stops',
+    subtitle: 'A recurring workflow fails to finish, and the team needs someone to find where it broke.',
   },
   {
-    title: 'Quotation and proposal drafts',
-    subtitle: 'Assemble first drafts from your templates and data so employees only need to review and approve.',
+    title: 'A connection between tools fails',
+    subtitle: 'Data that used to move between systems stalls after an access, field, or platform change.',
   },
   {
-    title: 'Meeting summaries and action items',
-    subtitle: 'Summarize discussions, record decisions, and keep follow-ups visible to the right people.',
+    title: 'Instructions are out of date',
+    subtitle: 'Prompts, documents, or business rules no longer reflect how the work is done.',
   },
   {
-    title: 'Answers from approved company knowledge',
-    subtitle: 'Give teams an internal assistant that responds using only the documents and policies you approve.',
+    title: 'Exceptions have no clear path',
+    subtitle: 'Edge cases pile up because no one has defined how they should be reviewed and handled.',
   },
   {
-    title: 'Data in sync across systems',
-    subtitle: 'Keep customers, orders, and project data consistent between the tools your teams use every day.',
+    title: 'A platform change affects a workflow',
+    subtitle: 'An update in a connected app changes behavior your automation or agent depends on.',
   },
   {
-    title: 'Recurring operational reports',
-    subtitle: 'Gather figures from multiple sources and prepare scheduled reports without manual spreadsheet work.',
+    title: 'The team needs a plain explanation',
+    subtitle: 'People want to understand what the system does, what it does not do, and who to contact when it misbehaves.',
   },
   {
-    title: 'Request routing and response drafts',
-    subtitle: 'Classify customer requests, send them to the right team, and prepare suggested replies.',
+    title: 'You want a regular review',
+    subtitle: 'A scheduled look at what is running, what failed, and what is worth adjusting next.',
   },
 ];
 
 export const faqs = [
   {
-    question: 'What kinds of business processes can TaiForge automate?',
-    answer: 'Typical candidates are repetitive, rules-based, or information-heavy tasks: data entry, document processing, inquiry routing, CRM updates, reporting, and multi-step workflows across business apps. In a discovery call, we help you identify which processes are worth automating first.',
+    question: 'What does TAI Forge support?',
+    answer: 'We help businesses monitor, maintain, troubleshoot, and optimize existing AI agents, automations, and integrations. A first conversation is for understanding what you already run and where support would help.',
   },
   {
-    question: 'Does TaiForge build custom AI agents?',
-    answer: 'Yes. We design AI agents for specific business tasks, such as answering internal questions, analyzing documents, or preparing drafts. Each agent is scoped to your use case, with permissions and safeguards appropriate to the work it supports.',
+    question: 'Do you build new AI systems from scratch?',
+    answer: 'Our work is centered on systems that are already in use. Troubleshooting and maintenance can include fixes and adjustments to those systems. A new build is not the starting point.',
   },
   {
-    question: 'Can TaiForge integrate with our existing software?',
-    answer: 'In most cases, yes. We regularly look at CRMs, ERPs, spreadsheets, email, document storage, and support tools. What is possible depends on each application\'s available APIs and access options, so we confirm feasibility during discovery.',
+    question: 'Which tools can you work with?',
+    answer: 'That depends on the agents, automations, and business software you already use, and on the access available for monitoring and changes. We confirm what is practical before support begins.',
   },
   {
     question: 'Do we need to replace our current systems?',
-    answer: 'Usually not. Our goal is to extend the value of the tools you already use by connecting them and removing manual work between them. If a change would genuinely help, we will explain why.',
+    answer: 'No. Support is there to look after what you have. If a change to an existing workflow would help, we will explain why.',
   },
   {
-    question: 'How does an AI automation project begin?',
-    answer: 'It starts with a discovery call to understand your operations and goals. From there, we recommend a focused first use case, agree on scope and success criteria, then design and build.',
+    question: 'How does support begin?',
+    answer: 'It starts with a conversation about the AI agents, automations, and integrations you rely on, and the issues your team is seeing. From there we agree on what to watch, maintain, and improve.',
   },
   {
-    question: 'Will people remain involved in important decisions?',
-    answer: 'Yes. We design workflows with human review and approval steps wherever actions are sensitive or consequential. You decide which steps run automatically and which require sign-off.',
+    question: 'Will our team stay involved?',
+    answer: 'Yes. You keep ownership of business decisions and approvals. We work with the people who use and administer the systems.',
   },
   {
-    question: 'Can workflows be maintained and improved after launch?',
-    answer: 'Yes. Ongoing support can include monitoring, error handling, refinements, documentation, team training, and expansion to new processes, depending on the support scope you choose.',
+    question: 'What can ongoing support include?',
+    answer: 'Depending on the scope you choose, support can include monitoring, troubleshooting, documentation, routine maintenance, and optimization of existing workflows.',
   },
 ];

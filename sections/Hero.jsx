@@ -19,27 +19,27 @@ const Hero = () => (
           variants={textVariant(1.0)}
           className="font-normal sm:text-[14px] text-[11px] text-secondary-white uppercase tracking-[0.2em] text-center"
         >
-          AI Automation · Workflow Engineering · Systems Integration
+          Managed AI Operations · Technical Support · Ongoing Care
         </motion.p>
-        <h1 className="sr-only">Make work flow. Put AI to work.</h1>
+        <h1 className="sr-only">Keep AI live. Care for it.</h1>
         <motion.div variants={textVariant(1.1)} aria-hidden="true" className="mt-[16px]">
-          <p className={styles.heroHeading}>Make work flow.</p>
+          <p className={styles.heroHeading}>Keep AI live.</p>
         </motion.div>
         <motion.div
           variants={textVariant(1.2)}
           className="flex flex-row items-center justify-center"
           aria-hidden="true"
         >
-          <p className={styles.heroHeading}>Put AI</p>
+          <p className={styles.heroHeading}>Care</p>
           <div className={styles.heroDText} />
-          <p className={styles.heroHeading}>to work.</p>
+          <p className={styles.heroHeading}>for it.</p>
         </motion.div>
 
         <motion.p
           variants={fadeIn('up', 'tween', 0.3, 1)}
           className="mt-[24px] max-w-[780px] font-normal sm:text-[20px] text-[16px] sm:leading-[32px] leading-[26px] text-secondary-white text-center"
         >
-          TaiForge helps businesses turn repetitive, disconnected processes into reliable AI-powered workflows. We connect your people, tools, and data so your team can spend less time on manual work and more time creating value.
+          TAI Forge monitors, maintains, troubleshoots, and optimizes the AI agents, automations, and integrations your business already relies on.
         </motion.p>
 
         <motion.div
@@ -47,10 +47,10 @@ const Hero = () => (
           className="mt-[32px] flex sm:flex-row flex-col items-center justify-center gap-4"
         >
           <a href={discoveryCallUrl} className={styles.primaryButton}>
-            Book an AI Discovery Call
+            Book a Support Call
           </a>
           <a href="#solutions" className={styles.secondaryButton}>
-            Explore Our Solutions
+            See Our Services
           </a>
         </motion.div>
       </div>
@@ -62,11 +62,11 @@ const Hero = () => (
         <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] sm:-top-[20px] -top-[10px] opacity-80" />
         <img
           src="/hero-workflow.svg"
-          alt="Illustration of an AI workflow connecting inquiries, documents, and email to CRM, ERP, and reporting systems, with a human review step"
+          alt="Illustration of business systems around an AI operations hub, including inquiries, documents, email, CRM, ERP, reports, and a human review step"
           className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
         />
 
-        <a href="#solutions" aria-label="Explore our solutions">
+        <a href="#solutions" aria-label="Explore our services">
           <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10 2xl:-ml-[100px]">
             <motion.img
               src="/stamp.svg"

@@ -28,7 +28,7 @@ const About = () => (
       viewport={{ once: false, amount: 0.15 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <TypingText title="| About TaiForge" textStyles="text-center" />
+      <TypingText title="| About TAI Forge" textStyles="text-center" />
       <TitleText title="Taiwan roots. Global ambition." textStyles="text-center" />
 
       <motion.div
@@ -37,18 +37,18 @@ const About = () => (
       >
         <div className="flex flex-col gap-6">
           <p>
-            TaiForge was founded on a simple belief: <span className="font-bold text-white">AI should do more than generate answers. It should help businesses get meaningful work done.</span>
+            TAI Forge was founded on a simple belief: <span className="font-bold text-white">AI systems need care after they go live.</span> Monitoring, maintenance, troubleshooting, and optimization are part of keeping them useful.
           </p>
           <p>
-            Our name brings together <span className="font-bold text-white">Tai</span>, a nod to our roots in Taiwan, and <span className="font-bold text-white">Forge</span>, the craft of shaping something useful and built to last. We turn the potential of AI into dependable business operations by connecting workflows, software, and intelligent systems.
+            Our name brings together <span className="font-bold text-white">Tai</span>, a nod to our roots in Taiwan, and <span className="font-bold text-white">Forge</span>, the craft of shaping something useful and built to last. We apply that to the AI agents, automations, and integrations businesses already depend on.
           </p>
         </div>
         <div className="flex flex-col gap-6">
           <p>
-            Our approach starts with understanding how your business works, identifying where improvement matters most, and engineering solutions that fit the way your people and systems already operate.
+            We start by understanding what is running, where it struggles, and how your team uses it. From there we monitor, troubleshoot, maintain, and optimize.
           </p>
           <p>
-            Our ambition is global: to help businesses everywhere operate with less friction and greater potential.
+            Our ambition is global: to help businesses everywhere keep their AI operations in good working order.
           </p>
         </div>
       </motion.div>
@@ -59,7 +59,7 @@ const About = () => (
       >
         <img
           src="/map.png"
-          alt="World map showing TaiForge's Taiwan origin connected to businesses in North America, Europe, and Asia-Pacific"
+          alt="World map showing TAI Forge based in Taiwan, with a global outlook toward North America, Europe, and Asia-Pacific"
           className="w-full h-full object-contain"
         />
 

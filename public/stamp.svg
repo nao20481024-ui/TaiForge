@@ -9,7 +9,7 @@
   <circle cx="100" cy="100" r="98" fill="url(#stamp-bg)"/>
   <circle cx="100" cy="100" r="97" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"/>
   <text fill="#FFFFFF" font-family="Eudoxus Sans, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">
-    <textPath href="#stamp-circle" textLength="462" lengthAdjust="spacing">EXPLORE SOLUTIONS " AI AUTOMATION " AI AGENTS "</textPath>
+    <textPath href="#stamp-circle" textLength="462" lengthAdjust="spacing">EXPLORE SERVICES " AI SUPPORT " ONGOING CARE "</textPath>
   </text>
   <circle cx="100" cy="100" r="40" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="3 7"/>
   <circle cx="100" cy="100" r="26" fill="#F7953B"/>

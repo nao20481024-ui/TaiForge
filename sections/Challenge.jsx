@@ -22,7 +22,7 @@ const Challenge = () => (
         textStyles="text-center"
       />
       <TitleText
-        title={<>Your business doesn't need more busywork. <br className="md:block hidden" />It needs better workflows.</>}
+        title={<>AI does not stay finished <br className="md:block hidden" />after it goes live.</>}
         textStyles="text-center max-w-[1200px]"
       />
 
@@ -42,13 +42,13 @@ const Challenge = () => (
         variants={fadeIn('up', 'tween', 0.3, 1)}
         className="mt-[48px] font-normal sm:text-[28px] text-[20px] sm:leading-[44px] leading-[32px] text-center text-secondary-white max-w-[1080px]"
       >
-        <span className="font-extrabold text-white">TaiForge</span> helps you fix the work behind the work. Through carefully designed <span className="font-extrabold text-white">workflow automation</span>, <span className="font-extrabold text-white">systems integration</span>, and <span className="font-extrabold text-white">AI-enabled processes</span>, we remove unnecessary manual steps so your team can focus on the work that moves your business forward.
+        <span className="font-extrabold text-white">TAI Forge</span> looks after the AI you already run. Through <span className="font-extrabold text-white">monitoring</span>, <span className="font-extrabold text-white">troubleshooting</span>, <span className="font-extrabold text-white">maintenance</span>, and <span className="font-extrabold text-white">optimization</span>, we help your agents, automations, and integrations stay useful as tools and workflows change.
       </motion.p>
 
       <motion.a
         href="#solutions"
         variants={fadeIn('up', 'tween', 0.4, 1)}
-        aria-label="Continue to our solutions"
+        aria-label="Continue to our services"
       >
         <img
           src="/arrow-down.svg"

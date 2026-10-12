@@ -19,14 +19,14 @@ const Footer = () => (
         <div className="max-w-[760px]">
           <p className="font-normal text-[14px] text-forge uppercase tracking-[0.2em]">Start the conversation</p>
           <h2 className="mt-[12px] font-bold md:text-[64px] text-[40px] md:leading-[76px] leading-[48px] text-white">
-            Let's make your business work smarter.
+            Let's look after the AI you already run.
           </h2>
           <p className="mt-[20px] font-normal md:text-[20px] text-[16px] md:leading-[32px] leading-[26px] text-secondary-white">
-            Tell us where your team spends too much time on repetitive work. We'll explore where automation and AI could make a meaningful difference.
+            Tell us which agents, automations, or integrations need attention. We will talk through how monitoring, maintenance, and troubleshooting could help.
           </p>
         </div>
         <a href={discoveryCallUrl} className={`${styles.primaryButton} shrink-0`}>
-          Book an AI Discovery Call
+          Book a Support Call
           <img src="/arrow.svg" alt="" className="w-[18px] h-[18px] object-contain invert" />
         </a>
       </section>
@@ -36,10 +36,10 @@ const Footer = () => (
 
         <div className="flex md:flex-row flex-col md:items-center justify-between gap-6">
           <div className="flex flex-col gap-[6px]">
-            <a href="#top" className="flex items-center" aria-label="TaiForge home">
+            <a href="#top" className="flex items-center" aria-label="TAI Forge home">
               <img
                 src="/logo.svg"
-                alt="TaiForge"
+                alt="TAI Forge"
                 className="h-[32px] w-auto object-contain"
               />
             </a>
@@ -59,7 +59,7 @@ const Footer = () => (
           </ul>
 
           <p className="font-normal text-[14px] text-white opacity-50">
-            © {new Date().getFullYear()} TaiForge. All rights reserved.
+            © {new Date().getFullYear()} TAI Forge. All rights reserved.
           </p>
         </div>
       </div>

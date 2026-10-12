@@ -28,11 +28,11 @@ const Faq = () => {
             <TypingText title="| FAQ" />
             <TitleText title="Questions, answered" />
             <p className="mt-[16px] font-normal sm:text-[18px] text-[15px] sm:leading-[30px] leading-[25px] text-secondary-white">
-              Every project is different. Scope, integrations, approval steps, and implementation methods depend on your needs, and we'll be clear about what is and isn't feasible.
+              Support depends on your systems, access, and how each tool can be monitored or changed. We will be clear about what we can take on.
             </p>
           </div>
           <a href={discoveryCallUrl} className={`${styles.primaryButton} relative mt-[32px] self-start`}>
-            Book an AI Discovery Call
+            Book a Support Call
           </a>
         </motion.div>
 

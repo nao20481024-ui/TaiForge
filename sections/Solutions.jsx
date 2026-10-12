@@ -10,7 +10,7 @@ import { staggerContainer } from '../utils/motion';
 import { solutions } from '../constants';
 
 const Solutions = () => {
-  const [active, setActive] = useState('solution-automation');
+  const [active, setActive] = useState('service-watch');
 
   return (
     <section className={`${styles.paddings}`} id="solutions">
@@ -21,10 +21,10 @@ const Solutions = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
-        <TypingText title="| Our Solutions" textStyles="text-center" />
-        <TitleText title={<>Four ways we put AI <br className="md:block hidden" />to work for your business</>} textStyles="text-center" />
+        <TypingText title="| Our Services" textStyles="text-center" />
+        <TitleText title={<>Four ways we look after <br className="md:block hidden" />the AI you already run</>} textStyles="text-center" />
         <p className="mt-[16px] mx-auto max-w-[760px] font-normal sm:text-[18px] text-[15px] sm:leading-[30px] leading-[24px] text-secondary-white text-center">
-          From a single automated process to an AI agent working across your tools, every solution is designed around how your business already operates.
+          Watch, resolve, maintain, and optimize the agents, automations, and integrations already in your business.
         </p>
 
         <div className="mt-[50px] flex lg:flex-row flex-col gap-5">

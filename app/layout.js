@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 
-const title = 'TaiForge | AI Automation & Intelligent Business Operations';
-const description = 'TaiForge helps businesses worldwide automate repetitive work, build AI agents, and connect business systems through practical AI-powered workflows.';
+const title = 'TAI Forge | Managed AI Operations & Technical Support';
+const description = 'TAI Forge helps businesses monitor, maintain, troubleshoot, and optimize existing AI agents, automations, and integrations.';
 
 export const metadata = {
   title,
@@ -15,10 +15,10 @@ export const metadata = {
   },
   openGraph: {
     type: 'website',
-    siteName: 'TaiForge',
+    siteName: 'TAI Forge',
     title,
     description,
-    images: [{ url: '/icon.svg', alt: 'TaiForge' }],
+    images: [{ url: '/icon.svg', alt: 'TAI Forge' }],
   },
   twitter: {
     card: 'summary',

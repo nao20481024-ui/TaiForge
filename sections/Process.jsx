@@ -22,7 +22,7 @@ const Process = () => (
       >
         <img
           src="/process.svg"
-          alt="A four-stage cycle: discover, design, build and integrate, optimize"
+          alt="A four-stage cycle: assess, monitor, troubleshoot, optimize"
           className="w-[90%] h-[90%] max-w-[560px] object-contain"
         />
       </motion.div>
@@ -31,9 +31,9 @@ const Process = () => (
         className="flex-[0.9] flex justify-center flex-col"
       >
         <TypingText title="| How We Work" />
-        <TitleText title={<>From first conversation to dependable workflow</>} />
+        <TitleText title={<>From first look to ongoing care</>} />
         <p className="mt-[16px] font-normal text-[18px] leading-[30px] text-secondary-white max-w-[560px]">
-          We don't hand you a slide deck and walk away. We take responsibility for thoughtful implementation, from discovery through ongoing improvement.
+          We stay with the systems you already have: understanding what is running, watching it, fixing problems, and improving it over time.
         </p>
         <div className="mt-[31px] flex flex-col max-w-[560px] gap-[28px]">
           {processSteps.map((step, index) => (

@@ -19,10 +19,10 @@ const Navbar = () => {
     >
       <div className="absolute w-[50%] inset-0 gradient-01" />
       <div className={`${styles.innerWidth} mx-auto flex justify-between items-center gap-8 relative`}>
-        <a href="#top" className="flex items-center" aria-label="TaiForge home">
+        <a href="#top" className="flex items-center" aria-label="TAI Forge home">
           <img
             src="/logo.svg"
-            alt="TaiForge"
+            alt="TAI Forge"
             className="h-[36px] w-auto object-contain"
           />
         </a>
@@ -38,7 +38,7 @@ const Navbar = () => {
         </ul>
 
         <a href={discoveryCallUrl} className={`${styles.primaryButton} lg:inline-flex hidden !py-3`}>
-          Book a Discovery Call
+          Book a Support Call
         </a>
 
         <button
@@ -76,7 +76,7 @@ const Navbar = () => {
             className={`${styles.primaryButton} mt-6 w-full`}
             onClick={() => setMenuOpen(false)}
           >
-            Book an AI Discovery Call
+            Book a Support Call
           </a>
         </div>
       )}

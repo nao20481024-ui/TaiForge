@@ -20,8 +20,8 @@ const WhyTaiForge = () => (
         variants={fadeIn('right', 'tween', 0.2, 1)}
         className="flex-[0.95] flex justify-center flex-col"
       >
-        <TypingText title="| Why TaiForge" />
-        <TitleText title={<>Your AI operations partner, not another tool vendor</>} />
+        <TypingText title="| Why TAI Forge" />
+        <TitleText title={<>An operations partner for the AI you already run</>} />
         <div className="mt-[48px] flex flex-wrap justify-between gap-[32px]">
           {differentiators.map((feature) => (
             <NewFeatures key={feature.title} {...feature} />

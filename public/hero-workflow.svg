@@ -85,5 +85,5 @@
   </circle>
   <circle cx="800" cy="290" r="70" fill="#1A232E" stroke="#7FC8EE" stroke-opacity="0.8" stroke-width="2"/>
   <text x="800" y="284" text-anchor="middle" font-size="30" font-weight="700" fill="#FFFFFF">AI</text>
-  <text x="800" y="312" text-anchor="middle" font-size="15" font-weight="500" fill="#C7C7C7" letter-spacing="1.5">WORKFLOW</text>
+  <text x="800" y="312" text-anchor="middle" font-size="15" font-weight="500" fill="#C7C7C7" letter-spacing="1.5">SUPPORT</text>
 </svg>

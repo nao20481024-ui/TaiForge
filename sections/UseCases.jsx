@@ -16,10 +16,10 @@ const UseCases = () => (
       viewport={{ once: false, amount: 0.1 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <TypingText title="| Business Applications" textStyles="text-center" />
-      <TitleText title={<>What business process automation <br className="lg:block hidden" />can look like in practice</>} textStyles="text-center" />
+      <TypingText title="| Support Areas" textStyles="text-center" />
+      <TitleText title={<>Where managed AI support <br className="lg:block hidden" />can help</>} textStyles="text-center" />
       <p className="mt-[16px] mx-auto max-w-[760px] font-normal sm:text-[18px] text-[15px] sm:leading-[30px] leading-[24px] text-secondary-white text-center">
-        A few examples of the workflows we can help design and build. Every business is different, so we shape each solution around your processes and systems.
+        Examples of situations we can look into. Every environment is different, so support is shaped around the systems you already run.
       </p>
 
       <div className="mt-[50px] grid md:grid-cols-2 grid-cols-1 gap-[24px]">
