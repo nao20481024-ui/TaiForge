@@ -7,18 +7,24 @@ export const metadata = {
   title,
   description,
   icons: {
-    icon: { url: '/taiforge-mark.svg', type: 'image/svg+xml' },
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.png', type: 'image/png' },
+    ],
+    apple: { url: '/apple-touch-icon.png', type: 'image/png' },
   },
   openGraph: {
     type: 'website',
     siteName: 'TaiForge',
     title,
     description,
+    images: [{ url: '/icon.svg', alt: 'TaiForge' }],
   },
   twitter: {
     card: 'summary',
     title,
     description,
+    images: ['/icon.svg'],
   },
 };
 

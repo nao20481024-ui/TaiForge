@@ -19,11 +19,12 @@ const Navbar = () => {
     >
       <div className="absolute w-[50%] inset-0 gradient-01" />
       <div className={`${styles.innerWidth} mx-auto flex justify-between items-center gap-8 relative`}>
-        <a href="#top" className="flex items-center gap-[12px]" aria-label="TaiForge home">
-          <img src="/taiforge-mark.svg" alt="" className="w-[36px] h-[36px] object-contain" />
-          <span className="font-extrabold text-[24px] text-white leading-[30px] tracking-[0.04em]">
-            TAIFORGE
-          </span>
+        <a href="#top" className="flex items-center" aria-label="TaiForge home">
+          <img
+            src="/logo.svg"
+            alt="TaiForge"
+            className="h-[36px] w-auto object-contain"
+          />
         </a>
 
         <ul className="lg:flex hidden items-center gap-8">

@@ -36,9 +36,12 @@ const Footer = () => (
 
         <div className="flex md:flex-row flex-col md:items-center justify-between gap-6">
           <div className="flex flex-col gap-[6px]">
-            <a href="#top" className="flex items-center gap-[12px]">
-              <img src="/taiforge-mark.svg" alt="" className="w-[32px] h-[32px] object-contain" />
-              <span className="font-extrabold text-[24px] text-white tracking-[0.04em]">TAIFORGE</span>
+            <a href="#top" className="flex items-center" aria-label="TaiForge home">
+              <img
+                src="/logo.svg"
+                alt="TaiForge"
+                className="h-[32px] w-auto object-contain"
+              />
             </a>
             <p className="font-normal text-[14px] text-secondary-white">
               Taiwan roots. Global ambition.
