@@ -3,21 +3,17 @@
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 
-const InsightCard = ({ index, imgUrl, title, subtitle }) => (
+const InsightCard = ({ index, title, subtitle }) => (
   <motion.div
-    variants={fadeIn('up', 'spring', index * 0.5, 1)}
-    className="flex md:flex-row flex-col gap-4"
+    variants={fadeIn('up', 'spring', index * 0.15, 1)}
+    className="flex flex-row gap-5 sm:p-8 p-6 rounded-[32px] border-[1px] border-white/10 gradient-05 hover:border-white/30 transition-colors"
   >
-    <img src={imgUrl} alt={title} className="md:w-[270px] w-full h-[250px] rounded-[32px] object-cover" />
-    <div className="w-full flex justify-between items-center">
-      <div className="flex-1 md:ml-[62px] flex flex-col max-w-[600px]">
-        <h4 className="font-normal lg:text-[42px] text-[26px] text-white">{title}</h4>
-        <p className="mt-[16px] font-normal lg:text-[20px] text-[14px] text-secondary-white">{subtitle}</p>
-      </div>
-
-      <div className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white">
-        <img src="arrow.svg" alt="arrow" className="w-[40%] h-[40%] object-contain" />
-      </div>
+    <div className="flex items-center justify-center shrink-0 w-[56px] h-[56px] rounded-full bg-transparent border-[1px] border-white/60">
+      <span className="font-bold text-[16px] text-forge">{String(index).padStart(2, '0')}</span>
+    </div>
+    <div className="flex-1 flex flex-col">
+      <h3 className="font-semibold lg:text-[24px] text-[20px] lg:leading-[32px] leading-[28px] text-white">{title}</h3>
+      <p className="mt-[10px] font-normal lg:text-[17px] text-[14px] lg:leading-[27px] leading-[22px] text-secondary-white">{subtitle}</p>
     </div>
   </motion.div>
 );

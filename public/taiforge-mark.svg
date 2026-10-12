@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="tf-mark-bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2B6E9C"/>
+      <stop offset="1" stop-color="#1A3550"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#tf-mark-bg)"/>
+  <path d="M15 19h34" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M32 19v18" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M32 37c0 6 4 9 10 9" stroke="#F7953B" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="47" cy="46" r="5" fill="#F7953B"/>
+</svg>

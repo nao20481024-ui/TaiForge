@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700" fill="none" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="pr-blob" x1="80" y1="420" x2="640" y2="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#232E3C"/>
+      <stop offset="1" stop-color="#2F5579"/>
+    </linearGradient>
+    <linearGradient id="pr-ring" x1="150" y1="120" x2="550" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7FC8EE"/>
+      <stop offset="1" stop-color="#2B6E9C"/>
+    </linearGradient>
+  </defs>
+  <path d="M90 470c0-60 40-90 120-95l360-20c60-3 90 40 90 100s-30 110-110 115l-330 15c-80 4-130-40-130-115z" fill="url(#pr-blob)"/>
+  <circle cx="350" cy="320" r="180" stroke="url(#pr-ring)" stroke-width="6" stroke-opacity="0.9"/>
+  <circle cx="350" cy="320" r="180" stroke="#F7953B" stroke-width="6" stroke-dasharray="70 1061" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate" from="0 350 320" to="360 350 320" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  <g fill="#1A232E" stroke="#FFFFFF" stroke-width="3">
+    <circle cx="350" cy="140" r="52"/>
+    <circle cx="530" cy="320" r="52"/>
+    <circle cx="350" cy="500" r="52"/>
+    <circle cx="170" cy="320" r="52"/>
+  </g>
+  <g font-size="30" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+    <text x="350" y="151">01</text>
+    <text x="530" y="331">02</text>
+    <text x="350" y="511">03</text>
+    <text x="170" y="331">04</text>
+  </g>
+  <g fill="#7FC8EE">
+    <path d="M459 185l18 6-6 18" stroke="#7FC8EE" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M471 437l-6 18-18-6" stroke="#7FC8EE" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M241 455l-18-6 6-18" stroke="#7FC8EE" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M229 203l6-18 18 6" stroke="#7FC8EE" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <rect x="290" y="290" width="120" height="60" rx="18" fill="#F7953B" fill-opacity="0.12" stroke="#F7953B" stroke-opacity="0.7" stroke-width="2"/>
+  <path d="M322 320h56M366 308l12 12-12 12" stroke="#F7953B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

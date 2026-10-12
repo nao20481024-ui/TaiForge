@@ -10,26 +10,29 @@
   scroll-behavior: smooth;
 }
 
+section[id] {
+  scroll-margin-top: 24px;
+}
+
 .gradient-01 {
   background-image: linear-gradient(
     270deg,
-    hsl(295deg 76% 51%) 0%,
-    hsl(284deg 70% 73%) 26%,
-    hsl(257deg 70% 86%) 39%,
-    hsl(202deg 92% 90%) 50%,
-    hsl(215deg 77% 81%) 61%,
-    hsl(221deg 73% 70%) 74%,
-    hsl(220deg 76% 51%) 100%
+    hsl(205deg 70% 45%) 0%,
+    hsl(200deg 70% 70%) 30%,
+    hsl(200deg 60% 86%) 50%,
+    hsl(28deg 90% 75%) 70%,
+    hsl(210deg 60% 45%) 100%
   );
   filter: blur(125px);
+  opacity: 0.6;
 }
 
 .hero-gradient {
   background: linear-gradient(
     97.86deg,
-    #a509ff 0%,
-    #34acc7 53.65%,
-    #a134c7 100%
+    #25618b 0%,
+    #7fc8ee 53.65%,
+    #f7953b 100%
   );
 }
 
@@ -40,7 +43,7 @@
   top: 0px;
   right: 0px;
 
-  background: #7aebfb;
+  background: #7fc8ee;
   filter: blur(190px);
 }
 
@@ -59,7 +62,7 @@
   left: 20%;
   top: 5%;
 
-  background: rgba(149, 66, 232, 0.35);
+  background: rgba(37, 97, 139, 0.45);
   filter: blur(175px);
   transform: rotate(-114.2deg);
 }
@@ -91,7 +94,7 @@
   left: 0px;
   top: 0px;
 
-  background: #8d39a3;
+  background: #2b6e9c;
   filter: blur(175px);
 }
 
@@ -104,4 +107,38 @@
 
   background: #65c4fa;
   filter: blur(150px);
+}
+
+.map-route {
+  stroke-dasharray: 6 8;
+  animation: map-route-flow 2.5s linear infinite;
+}
+
+@keyframes map-route-flow {
+  to {
+    stroke-dashoffset: -28;
+  }
+}
+
+.map-pulse {
+  animation: map-pulse 2.4s ease-out infinite;
+}
+
+@keyframes map-pulse {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .map-route,
+  .map-pulse {
+    animation: none;
+  }
 }

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700" fill="none">
+  <defs>
+    <linearGradient id="wt-blob" x1="80" y1="420" x2="640" y2="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#232E3C"/>
+      <stop offset="1" stop-color="#2F5579"/>
+    </linearGradient>
+    <linearGradient id="wt-layer" x1="200" y1="0" x2="500" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2B6E9C"/>
+      <stop offset="1" stop-color="#7FC8EE"/>
+    </linearGradient>
+  </defs>
+  <path d="M110 500c0-60 40-90 120-95l340-15c60-3 90 40 90 100s-30 100-110 105l-310 15c-80 4-130-35-130-110z" fill="url(#wt-blob)"/>
+  <g stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="3" stroke-linejoin="round">
+    <path d="M350 400l190-95-190-95-190 95z" fill="#1F3448"/>
+    <path d="M350 330l190-95-190-95-190 95z" fill="#24425E"/>
+    <path d="M350 260l190-95-190-95-190 95z" fill="url(#wt-layer)" fill-opacity="0.9"/>
+  </g>
+  <g stroke="#F7953B" stroke-width="4" stroke-linecap="round">
+    <path d="M160 305v70l190 95 190-95v-70" stroke-opacity="0.8" stroke-dasharray="10 10"/>
+  </g>
+  <circle cx="350" cy="165" r="18" fill="#1A232E" stroke="#FFFFFF" stroke-width="3"/>
+  <circle cx="350" cy="165" r="7" fill="#F7953B"/>
+  <g fill="#FFFFFF">
+    <circle cx="255" cy="165" r="6"/>
+    <circle cx="445" cy="165" r="6"/>
+  </g>
+  <path d="M261 165h71M368 165h71" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+</svg>

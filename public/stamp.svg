@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="stamp-bg" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2B6E9C"/>
+      <stop offset="1" stop-color="#1E2C3D"/>
+    </linearGradient>
+    <path id="stamp-circle" d="M100 100m-74 0a74 74 0 1 1 148 0a74 74 0 1 1 -148 0"/>
+  </defs>
+  <circle cx="100" cy="100" r="98" fill="url(#stamp-bg)"/>
+  <circle cx="100" cy="100" r="97" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"/>
+  <text fill="#FFFFFF" font-family="Eudoxus Sans, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">
+    <textPath href="#stamp-circle" textLength="462" lengthAdjust="spacing">EXPLORE SOLUTIONS " AI AUTOMATION " AI AGENTS "</textPath>
+  </text>
+  <circle cx="100" cy="100" r="40" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="3 7"/>
+  <circle cx="100" cy="100" r="26" fill="#F7953B"/>
+  <circle cx="100" cy="100" r="9" fill="#1A232E"/>
+</svg>

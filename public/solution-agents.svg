@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900" preserveAspectRatio="xMidYMid slice" fill="none">
+  <defs>
+    <linearGradient id="sg-bg" x1="600" y1="0" x2="0" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2A4E73"/>
+      <stop offset="1" stop-color="#171F2A"/>
+    </linearGradient>
+    <radialGradient id="sg-glow" cx="300" cy="310" r="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3C8DC0" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#3C8DC0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="900" fill="url(#sg-bg)"/>
+  <circle cx="300" cy="310" r="200" fill="url(#sg-glow)"/>
+  <circle cx="300" cy="310" r="140" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2" stroke-dasharray="4 10"/>
+  <g stroke="#7FC8EE" stroke-opacity="0.6" stroke-width="2">
+    <path d="M300 310L300 170M300 310L421 240M300 310L421 380M300 310L300 450M300 310L179 380M300 310L179 240"/>
+  </g>
+  <g fill="#1A232E" stroke="#7FC8EE" stroke-width="2">
+    <circle cx="300" cy="170" r="20"/>
+    <circle cx="421" cy="240" r="20"/>
+    <circle cx="421" cy="380" r="20"/>
+    <circle cx="300" cy="450" r="20" stroke="#F7953B"/>
+    <circle cx="179" cy="380" r="20"/>
+    <circle cx="179" cy="240" r="20"/>
+  </g>
+  <g fill="#7FC8EE">
+    <circle cx="300" cy="170" r="6"/>
+    <circle cx="421" cy="240" r="6"/>
+    <circle cx="421" cy="380" r="6"/>
+    <circle cx="300" cy="450" r="6" fill="#F7953B"/>
+    <circle cx="179" cy="380" r="6"/>
+    <circle cx="179" cy="240" r="6"/>
+  </g>
+  <circle cx="300" cy="310" r="54" fill="#1A232E" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="3"/>
+  <path d="M276 310h48M300 286v48" stroke="#F7953B" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="300" cy="310" r="10" fill="#1A232E" stroke="#F7953B" stroke-width="4"/>
+</svg>

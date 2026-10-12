@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { socials } from '../constants';
+import { discoveryCallUrl, navLinks } from '../constants';
 
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
@@ -15,44 +15,49 @@ const Footer = () => (
   >
     <div className="footer-gradient" />
     <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
-      <div className="flex items-center justify-between flex-wrap gap-5">
-        <h4 className="font-bold md:text-[64px] text-[44px] text-white">
-          Enter the Metaverse
-        </h4>
-        <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
-          <img
-            src="/headset.svg"
-            alt="headset"
-            className="w-[24px] h-[24px] object-contain"
-          />
-          <span className="font-normal text-[16px] text-white">
-            Enter Metaverse
-          </span>
-        </button>
-      </div>
+      <section id="contact" className="flex lg:flex-row flex-col lg:items-end justify-between gap-8 py-8">
+        <div className="max-w-[760px]">
+          <p className="font-normal text-[14px] text-forge uppercase tracking-[0.2em]">Start the conversation</p>
+          <h2 className="mt-[12px] font-bold md:text-[64px] text-[40px] md:leading-[76px] leading-[48px] text-white">
+            Let's make your business work smarter.
+          </h2>
+          <p className="mt-[20px] font-normal md:text-[20px] text-[16px] md:leading-[32px] leading-[26px] text-secondary-white">
+            Tell us where your team spends too much time on repetitive work. We'll explore where automation and AI could make a meaningful difference.
+          </p>
+        </div>
+        <a href={discoveryCallUrl} className={`${styles.primaryButton} shrink-0`}>
+          Book an AI Discovery Call
+          <img src="/arrow.svg" alt="" className="w-[18px] h-[18px] object-contain invert" />
+        </a>
+      </section>
 
       <div className="flex flex-col">
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />
 
-        <div className="flex items-center justify-between flex-wrap gap-4">
-          <h4 className="font-extrabold text-[24px] text-white">
-            METADROID
-          </h4>
-          <p className="font-normal text-[14px] text-white opacity-50">
-            Copyright © 2021 - 2022 Metadroid. All rights reserved.
-          </p>
-
-          <div className="flex gap-4">
-            {socials.map((social) => (
-              <a key={social.name} href={social.link}>
-                <img
-                  src={social.url}
-                  alt={social.name}
-                  className="w-[24px] h-[24px] object-contain"
-                />
-              </a>
-            ))}
+        <div className="flex md:flex-row flex-col md:items-center justify-between gap-6">
+          <div className="flex flex-col gap-[6px]">
+            <a href="#top" className="flex items-center gap-[12px]">
+              <img src="/taiforge-mark.svg" alt="" className="w-[32px] h-[32px] object-contain" />
+              <span className="font-extrabold text-[24px] text-white tracking-[0.04em]">TAIFORGE</span>
+            </a>
+            <p className="font-normal text-[14px] text-secondary-white">
+              Taiwan roots. Global ambition.
+            </p>
           </div>
+
+          <ul className="flex flex-wrap gap-x-6 gap-y-3">
+            {navLinks.map((link) => (
+              <li key={link.id}>
+                <a href={`#${link.id}`} className="font-normal text-[14px] text-white opacity-70 hover:opacity-100 transition-opacity">
+                  {link.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <p className="font-normal text-[14px] text-white opacity-50">
+            © {new Date().getFullYear()} TaiForge. All rights reserved.
+          </p>
         </div>
       </div>
     </div>

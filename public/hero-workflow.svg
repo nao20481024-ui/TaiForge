@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice" fill="none" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="hw-bg" x1="0" y1="0" x2="1600" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1B2B3E"/>
+      <stop offset="0.55" stop-color="#1E3A55"/>
+      <stop offset="1" stop-color="#1A232E"/>
+    </linearGradient>
+    <radialGradient id="hw-glow" cx="800" cy="290" r="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3C8DC0" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#3C8DC0" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="hw-dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#FFFFFF" fill-opacity="0.08"/>
+    </pattern>
+    <linearGradient id="hw-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7FC8EE" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#7FC8EE" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="600" fill="url(#hw-bg)"/>
+  <rect width="1600" height="600" fill="url(#hw-dots)"/>
+  <circle cx="800" cy="290" r="260" fill="url(#hw-glow)"/>
+
+  <g stroke="url(#hw-line)" stroke-width="2">
+    <path id="hw-p1" d="M520 160 C 620 160, 640 290, 730 290"/>
+    <path id="hw-p2" d="M520 290 L 730 290"/>
+    <path id="hw-p3" d="M520 420 C 620 420, 640 290, 730 290"/>
+    <path id="hw-p4" d="M870 290 C 960 290, 980 160, 1080 160"/>
+    <path id="hw-p5" d="M870 290 L 1080 290"/>
+    <path id="hw-p6" d="M870 290 C 960 290, 980 420, 1080 420"/>
+  </g>
+  <path d="M800 360 L 800 450" stroke="#F7953B" stroke-opacity="0.7" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <g fill="#F7953B">
+    <circle r="4"><animateMotion dur="4s" repeatCount="indefinite"><mpath href="#hw-p1"/></animateMotion></circle>
+    <circle r="4"><animateMotion dur="4s" begin="1.3s" repeatCount="indefinite"><mpath href="#hw-p2"/></animateMotion></circle>
+    <circle r="4"><animateMotion dur="4s" begin="2.6s" repeatCount="indefinite"><mpath href="#hw-p3"/></animateMotion></circle>
+    <circle r="4"><animateMotion dur="4s" begin="0.6s" repeatCount="indefinite"><mpath href="#hw-p4"/></animateMotion></circle>
+    <circle r="4"><animateMotion dur="4s" begin="1.9s" repeatCount="indefinite"><mpath href="#hw-p5"/></animateMotion></circle>
+    <circle r="4"><animateMotion dur="4s" begin="3.2s" repeatCount="indefinite"><mpath href="#hw-p6"/></animateMotion></circle>
+  </g>
+
+  <g font-size="20" font-weight="600" fill="#FFFFFF">
+    <g>
+      <rect x="320" y="128" width="200" height="64" rx="16" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.18"/>
+      <circle cx="350" cy="160" r="6" fill="#7FC8EE"/>
+      <text x="368" y="167">Inquiries</text>
+    </g>
+    <g>
+      <rect x="320" y="258" width="200" height="64" rx="16" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.18"/>
+      <circle cx="350" cy="290" r="6" fill="#7FC8EE"/>
+      <text x="368" y="297">Documents</text>
+    </g>
+    <g>
+      <rect x="320" y="388" width="200" height="64" rx="16" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.18"/>
+      <circle cx="350" cy="420" r="6" fill="#7FC8EE"/>
+      <text x="368" y="427">Email</text>
+    </g>
+
+    <g>
+      <rect x="1080" y="128" width="200" height="64" rx="16" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.18"/>
+      <circle cx="1110" cy="160" r="6" fill="#F7953B"/>
+      <text x="1128" y="167">CRM</text>
+    </g>
+    <g>
+      <rect x="1080" y="258" width="200" height="64" rx="16" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.18"/>
+      <circle cx="1110" cy="290" r="6" fill="#F7953B"/>
+      <text x="1128" y="297">ERP</text>
+    </g>
+    <g>
+      <rect x="1080" y="388" width="200" height="64" rx="16" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.18"/>
+      <circle cx="1110" cy="420" r="6" fill="#F7953B"/>
+      <text x="1128" y="427">Reports</text>
+    </g>
+
+    <g>
+      <rect x="700" y="450" width="200" height="64" rx="16" fill="#F7953B" fill-opacity="0.12" stroke="#F7953B" stroke-opacity="0.6"/>
+      <text x="800" y="489" text-anchor="middle">Human review</text>
+    </g>
+  </g>
+
+  <circle cx="800" cy="290" r="88" stroke="#7FC8EE" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="4 10">
+    <animateTransform attributeName="transform" type="rotate" from="0 800 290" to="360 800 290" dur="30s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="800" cy="290" r="70" fill="#1A232E" stroke="#7FC8EE" stroke-opacity="0.8" stroke-width="2"/>
+  <text x="800" y="284" text-anchor="middle" font-size="30" font-weight="700" fill="#FFFFFF">AI</text>
+  <text x="800" y="312" text-anchor="middle" font-size="15" font-weight="500" fill="#C7C7C7" letter-spacing="1.5">WORKFLOW</text>
+</svg>

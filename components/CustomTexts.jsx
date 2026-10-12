@@ -22,7 +22,7 @@ export const TitleText = ({ title, textStyles }) => (
     variants={textVariant2}
     initial="hidden"
     whileInView="show"
-    className={`mt-[8px] font-bold md:text-[64px] text-[40px] text-white ${textStyles}`}
+    className={`mt-[8px] font-bold lg:text-[56px] md:text-[48px] text-[34px] lg:leading-[68px] md:leading-[58px] leading-[42px] text-white ${textStyles}`}
   >{title}
   </motion.h2>
 );
