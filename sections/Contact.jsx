@@ -5,7 +5,7 @@ import styles from '../styles';
 import { contactIntents, resolveIntent } from '../constants';
 import { validateContact } from '../lib/contact';
 
-const fieldClass = 'w-full rounded-[16px] border border-white/15 bg-primary-black px-4 py-3 text-[16px] leading-[24px] text-white outline-none transition-colors placeholder:text-white/35 focus:border-forge';
+const fieldClass = 'w-full rounded-[16px] border border-white/15 bg-primary-black px-4 py-3 text-[16px] leading-[24px] text-white outline-none transition-colors placeholder:text-white/55 focus:border-forge focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-sky';
 
 const emptyFields = {
   name: '',
@@ -16,6 +16,7 @@ const emptyFields = {
 
 const Contact = ({ initialIntent = '' }) => {
   const errorRef = useRef(null);
+  const successRef = useRef(null);
   const [intent, setIntent] = useState(resolveIntent(initialIntent));
   const [fields, setFields] = useState(emptyFields);
   const [errors, setErrors] = useState({});
@@ -33,6 +34,12 @@ const Contact = ({ initialIntent = '' }) => {
       errorRef.current.focus();
     }
   }, [formError]);
+
+  useEffect(() => {
+    if (status === 'success' && successRef.current) {
+      successRef.current.focus();
+    }
+  }, [status]);
 
   const updateField = (key) => (event) => {
     const { value } = event.target;
@@ -103,7 +110,7 @@ const Contact = ({ initialIntent = '' }) => {
       <div className={`${styles.innerWidth} mx-auto grid items-start gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16`}>
         <div className="max-w-[560px]">
           <p className="font-normal text-[14px] uppercase tracking-[0.2em] text-forge">Start the conversation</p>
-          <h2 className="mt-[12px] font-bold text-[40px] leading-[48px] text-white md:text-[64px] md:leading-[76px]">
+          <h2 id="contact-heading" className="mt-[12px] font-bold text-[40px] leading-[48px] text-white md:text-[64px] md:leading-[76px]">
             Let&apos;s look after the AI you already run.
           </h2>
           <p className="mt-[20px] font-normal text-[16px] leading-[26px] text-secondary-white md:text-[20px] md:leading-[32px]">
@@ -116,7 +123,7 @@ const Contact = ({ initialIntent = '' }) => {
 
         <div className="rounded-[32px] border border-white/10 bg-[#121a24] p-6 sm:p-8">
           {status === 'success' ? (
-            <div role="status" className="flex flex-col gap-4">
+            <div ref={successRef} tabIndex={-1} role="status" className="flex flex-col gap-4 outline-none">
               <h3 className="font-bold text-[28px] leading-[36px] text-white">Request delivered</h3>
               <p className="font-normal text-[16px] leading-[26px] text-secondary-white">
                 Your {deliveredLabel} request was delivered to TAI Forge.
@@ -133,7 +140,7 @@ const Contact = ({ initialIntent = '' }) => {
               </button>
             </div>
           ) : (
-            <form action="/api/contact" method="post" className="relative flex flex-col gap-5 [color-scheme:dark]" noValidate onSubmit={handleSubmit}>
+            <form action="/api/contact" method="post" aria-labelledby="contact-heading" className="relative flex flex-col gap-5 [color-scheme:dark]" noValidate onSubmit={handleSubmit}>
               {formError ? (
                 <p
                   ref={errorRef}
@@ -247,6 +254,7 @@ const Contact = ({ initialIntent = '' }) => {
               <button
                 type="submit"
                 disabled={status === 'submitting'}
+                aria-busy={status === 'submitting'}
                 className={`${styles.primaryButton} w-full disabled:cursor-wait disabled:opacity-70 sm:w-auto`}
               >
                 {status === 'submitting' ? 'Sending request...' : submitLabel}

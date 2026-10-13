@@ -15,9 +15,9 @@ const styles = {
   navPadding: 'pt-[98px]',
 
   primaryButton:
-      'inline-flex items-center justify-center gap-[10px] h-fit py-4 px-6 bg-forge hover:bg-[#ffa957] text-primary-black font-bold text-[16px] rounded-[32px] transition-colors',
+      'inline-flex items-center justify-center gap-[10px] h-fit py-4 px-6 bg-forge hover:bg-[#ffa957] text-primary-black font-bold text-[16px] rounded-[32px] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white',
   secondaryButton:
-      'inline-flex items-center justify-center gap-[10px] h-fit py-4 px-6 border-[1px] border-white/40 hover:border-white hover:bg-white/5 text-white font-normal text-[16px] rounded-[32px] transition-colors',
+      'inline-flex items-center justify-center gap-[10px] h-fit py-4 px-6 border-[1px] border-white/40 hover:border-white hover:bg-white/5 text-white font-normal text-[16px] rounded-[32px] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-sky',
 };
 
 export default styles;

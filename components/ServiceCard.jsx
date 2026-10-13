@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 
-const ServiceCard = ({ imgUrl, label, description, index }) => (
+const ServiceCard = ({ imgUrl, alt, label, description, index }) => (
   <motion.article
     variants={fadeIn('up', 'spring', index * 0.12, 0.75)}
     className="group flex h-full flex-col overflow-hidden rounded-[24px] border border-white/10 bg-[#121a24] transition-colors duration-300 hover:border-white/25"
@@ -11,7 +11,7 @@ const ServiceCard = ({ imgUrl, label, description, index }) => (
     <div className="overflow-hidden border-b border-white/10">
       <img
         src={imgUrl}
-        alt=""
+        alt={alt}
         width={1280}
         height={800}
         loading="lazy"

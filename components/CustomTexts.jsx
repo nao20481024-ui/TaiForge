@@ -6,10 +6,11 @@ import { textContainer, textVariant2 } from '../utils/motion';
 export const TypingText = ({ title, textStyles }) => (
   <motion.p
     variants={textContainer}
+    aria-label={title}
     className={`font-normal text-[14px] text-secondary-white ${textStyles}`}
   >
     {Array.from(title).map((letter, i) => (
-      <motion.span variants={textVariant2} key={i}>
+      <motion.span aria-hidden="true" variants={textVariant2} key={i}>
         {letter === ' ' ? '\u00A0' : letter}
       </motion.span>
     ))}

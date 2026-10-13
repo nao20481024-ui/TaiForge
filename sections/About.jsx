@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import styles from '../styles';
 import { TitleText, TypingText } from '../components';
 import { staggerContainer, fadeIn } from '../utils/motion';
@@ -55,12 +56,16 @@ const About = () => (
 
       <motion.div
         variants={fadeIn('up', 'tween', 0.3, 1)}
-        className="relative mt-[56px] w-full aspect-[3510/1578]"
+        className="relative mt-[56px] w-full"
       >
-        <img
+        <Image
           src="/map.png"
-          alt="World map showing TAI Forge based in Taiwan, with a global outlook toward North America, Europe, and Asia-Pacific"
-          className="w-full h-full object-contain"
+          alt="Dotted world map. TAI Forge is marked in Taiwan, with routes toward North America, Europe, and Asia-Pacific."
+          width={3510}
+          height={1578}
+          sizes="(min-width: 1536px) 1280px, (min-width: 640px) calc(100vw - 8rem), calc(100vw - 3rem)"
+          quality={60}
+          className="h-auto w-full"
         />
 
         <svg
@@ -90,7 +95,7 @@ const About = () => (
             style={toPercent(region)}
           >
             <span className="block sm:w-[16px] sm:h-[16px] w-[10px] h-[10px] rounded-full bg-brand-sky border-[3px] border-primary-black" />
-            <span className="md:block hidden absolute top-[22px] left-1/2 -translate-x-1/2 whitespace-nowrap text-[13px] text-secondary-white">
+            <span aria-hidden="true" className="absolute left-1/2 top-[18px] hidden -translate-x-1/2 whitespace-nowrap text-[11px] text-secondary-white sm:text-[13px] md:block">
               {region.name}
             </span>
           </div>
@@ -102,7 +107,7 @@ const About = () => (
         >
           <span className="map-pulse absolute inset-0 rounded-full bg-forge" />
           <span className="relative block sm:w-[22px] sm:h-[22px] w-[14px] h-[14px] rounded-full bg-forge border-[4px] border-primary-black" />
-          <span className="sm:block hidden absolute -top-[44px] left-1/2 -translate-x-1/2 whitespace-nowrap px-3 py-1 rounded-full bg-forge text-primary-black text-[13px] font-bold">
+          <span aria-hidden="true" className="absolute left-1/2 top-[-36px] -translate-x-1/2 whitespace-nowrap rounded-full bg-forge px-2 py-1 text-[11px] font-bold text-primary-black sm:-top-[44px] sm:px-3 sm:text-[13px]">
             Taiwan
           </span>
         </div>

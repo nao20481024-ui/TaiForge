@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
 import { TitleText, TypingText } from '../components';
@@ -73,14 +74,13 @@ const Process = () => (
 
       <motion.figure variants={fadeIn('up', 'tween', 0.2, 0.8)} className="mx-auto mt-12 w-full max-w-[1040px] sm:mt-14">
         <div className="overflow-hidden rounded-[28px] border border-white/10 bg-[#121a24] shadow-[0_24px_80px_rgba(0,0,0,0.35)]">
-          <img
+          <Image
             src="/tai-forge-website-images/tai-forge-monitoring.webp"
             alt="Illustration of a monitoring station linking document, data, and message panels to a central operations display"
             width={1440}
             height={810}
-            loading="lazy"
-            decoding="async"
-            className="aspect-[16/9] w-full object-cover object-center"
+            sizes="(min-width: 1104px) 1040px, calc(100vw - 3rem)"
+            className="aspect-[16/9] h-auto w-full object-cover object-center"
           />
         </div>
         <figcaption className="mt-4 text-center font-normal text-[13px] leading-[20px] text-secondary-white">

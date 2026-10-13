@@ -6,7 +6,7 @@ const firstParam = (value) => (Array.isArray(value) ? value[0] : value);
 const Page = ({ searchParams }) => (
   <div className="bg-primary-black overflow-hidden" id="top">
     <Navbar />
-    <main>
+    <main id="main" tabIndex={-1} className="outline-none">
       <Hero />
       <div className="relative">
         <Challenge />

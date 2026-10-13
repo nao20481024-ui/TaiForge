@@ -46,24 +46,28 @@ export const solutions = [
   {
     id: 'service-watch',
     imgUrl: '/tai-forge-website-images/tai-forge-service-watch.svg',
+    alt: 'Circular monitoring display with a signal trace on a dark operations panel',
     label: 'AI Watch',
     description: 'Monitoring and failure detection',
   },
   {
     id: 'service-resolve',
     imgUrl: '/tai-forge-website-images/tai-forge-service-resolve.svg',
+    alt: 'Shield with a check mark, illustrating a repaired workflow',
     label: 'AI Resolve',
     description: 'Troubleshooting and approved repairs',
   },
   {
     id: 'service-maintain',
     imgUrl: '/tai-forge-website-images/tai-forge-service-maintain.svg',
+    alt: 'Stacked maintenance list beside a clock, illustrating ongoing care',
     label: 'AI Maintain',
     description: 'Ongoing maintenance and documentation',
   },
   {
     id: 'service-optimize',
     imgUrl: '/tai-forge-website-images/tai-forge-service-optimize.svg',
+    alt: 'Rising bar chart with an upward trend, illustrating a performance improvement',
     label: 'AI Optimize',
     description: 'Performance, cost and reliability improvements',
   },

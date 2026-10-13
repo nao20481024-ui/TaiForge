@@ -36,7 +36,9 @@ const WhyTaiForge = () => (
         <img
           src="/why-taiforge.svg"
           alt="Layered systems connected into a single workflow"
-          className="w-[90%] h-[90%] max-w-[560px] object-contain"
+          width={700}
+          height={700}
+          className="h-[90%] w-[90%] max-w-[560px] object-contain"
         />
       </motion.div>
     </motion.div>

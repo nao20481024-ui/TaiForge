@@ -53,7 +53,10 @@ const Challenge = () => (
         <img
           src="/arrow-down.svg"
           alt=""
-          className="w-[18px] h-[28px] object-contain mt-[28px]"
+          aria-hidden="true"
+          width={18}
+          height={28}
+          className="mt-[28px] h-[28px] w-[18px] object-contain"
         />
       </motion.a>
     </motion.div>

@@ -14,7 +14,7 @@ const Hero = () => (
 
     <motion.div
       variants={staggerContainer}
-      initial="hidden"
+      initial={false}
       whileInView="show"
       viewport={{ once: true, amount: 0.4 }}
       className={`${styles.innerWidth} relative z-10 mx-auto flex flex-col items-center px-6 sm:px-16`}
@@ -54,13 +54,7 @@ const Hero = () => (
       </motion.div>
     </motion.div>
 
-    <motion.div
-      initial={{ opacity: 0, y: 36 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.9, delay: 0.15, ease: 'easeOut' }}
-      viewport={{ once: true, amount: 0.2 }}
-      className="hero-visual relative z-10 mx-auto mt-16 w-full max-w-[1680px] sm:mt-24"
-    >
+    <div className="hero-visual relative z-10 mx-auto mt-16 w-full max-w-[1680px] sm:mt-24">
       <div className="relative aspect-[860/1050] w-full md:aspect-[1920/768]">
         <picture>
           <source
@@ -79,7 +73,7 @@ const Hero = () => (
           />
         </picture>
       </div>
-    </motion.div>
+    </div>
   </section>
 );
 

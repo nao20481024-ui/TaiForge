@@ -22,6 +22,7 @@ const renderPage = ({ title, message, errors }) => {
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>${escapeHtml(title)} | TAI Forge</title>
+  <meta name="robots" content="noindex" />
 </head>
 <body style="margin:0;background:#1A232E;color:#ffffff;font-family:Segoe UI,sans-serif;">
   <main style="max-width:680px;margin:0 auto;padding:64px 24px;">
