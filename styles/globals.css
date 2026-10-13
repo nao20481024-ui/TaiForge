@@ -27,13 +27,15 @@ section[id] {
   opacity: 0.6;
 }
 
-.hero-gradient {
-  background: linear-gradient(
-    97.86deg,
-    #25618b 0%,
-    #7fc8ee 53.65%,
-    #f7953b 100%
-  );
+.hero-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(to bottom, #1a232e 0%, rgba(26, 35, 46, 0) 14%),
+    linear-gradient(to top, #1a232e 0%, rgba(26, 35, 46, 0) 20%),
+    radial-gradient(ellipse at center, rgba(26, 35, 46, 0) 48%, rgba(26, 35, 46, 0.55) 100%);
 }
 
 .gradient-02 {

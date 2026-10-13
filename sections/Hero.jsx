@@ -3,81 +3,81 @@
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import { discoveryCallUrl } from '../constants';
-import { fadeIn, slideIn, staggerContainer, textVariant } from '../utils/motion';
+import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
+  <section className="relative overflow-hidden pt-8 sm:pt-14">
+    <div className="pointer-events-none absolute left-1/2 top-[-80px] h-[460px] w-[min(920px,90vw)] -translate-x-1/2 rounded-full bg-brand-blue/25 blur-[140px]" />
+    <div className="pointer-events-none absolute left-[12%] top-[220px] h-[240px] w-[280px] rounded-full bg-forge/15 blur-[120px]" />
+    <div className="pointer-events-none absolute right-[8%] top-[80px] h-[180px] w-[220px] rounded-full bg-brand-sky/10 blur-[110px]" />
+
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth2} mx-auto flex flex-col`}
+      viewport={{ once: true, amount: 0.4 }}
+      className={`${styles.innerWidth} relative z-10 mx-auto flex flex-col items-center px-6 sm:px-16`}
     >
-      <div className="relative z-10 flex flex-col items-center justify-center sm:pr-16 pr-6">
-        <motion.p
-          variants={textVariant(1.0)}
-          className="font-normal sm:text-[14px] text-[11px] text-secondary-white uppercase tracking-[0.2em] text-center"
-        >
-          Managed AI Operations · Technical Support · Ongoing Care
-        </motion.p>
-        <h1 className="sr-only">Keep AI live. Care for it.</h1>
-        <motion.div variants={textVariant(1.1)} aria-hidden="true" className="mt-[16px]">
-          <p className={styles.heroHeading}>Keep AI live.</p>
-        </motion.div>
-        <motion.div
-          variants={textVariant(1.2)}
-          className="flex flex-row items-center justify-center"
-          aria-hidden="true"
-        >
-          <p className={styles.heroHeading}>Care</p>
-          <div className={styles.heroDText} />
-          <p className={styles.heroHeading}>for it.</p>
-        </motion.div>
+      <motion.p
+        variants={textVariant(0.15)}
+        className="text-center font-normal text-[11px] uppercase tracking-[0.16em] text-forge sm:text-[13px] sm:tracking-[0.32em]"
+      >
+        MANAGED AI OPERATIONS & SUPPORT
+      </motion.p>
 
-        <motion.p
-          variants={fadeIn('up', 'tween', 0.3, 1)}
-          className="mt-[24px] max-w-[780px] font-normal sm:text-[20px] text-[16px] sm:leading-[32px] leading-[26px] text-secondary-white text-center"
-        >
-          TAI Forge monitors, maintains, troubleshoots, and optimizes the AI agents, automations, and integrations your business already relies on.
-        </motion.p>
+      <motion.h1
+        variants={textVariant(0.3)}
+        className="mt-8 w-full min-w-0 max-w-[1100px] text-center font-bold tracking-[-0.035em] text-white text-[clamp(30px,8.5vw,96px)] leading-[1.05] sm:mt-10"
+      >
+        Your AI.
+        <span className="mt-1 block sm:mt-2">Always Supported.</span>
+      </motion.h1>
 
-        <motion.div
-          variants={fadeIn('up', 'tween', 0.4, 1)}
-          className="mt-[32px] flex sm:flex-row flex-col items-center justify-center gap-4"
-        >
-          <a href={discoveryCallUrl} className={styles.primaryButton}>
-            Book a Support Call
-          </a>
-          <a href="#solutions" className={styles.secondaryButton}>
-            See Our Services
-          </a>
-        </motion.div>
-      </div>
+      <motion.p
+        variants={fadeIn('up', 'tween', 0.45, 0.8)}
+        className="mt-8 max-w-[680px] text-center font-normal text-[17px] leading-[28px] text-secondary-white sm:mt-10 sm:text-[20px] sm:leading-[34px]"
+      >
+        We monitor, maintain and troubleshoot the AI agents, automations and integrations your business relies on.
+      </motion.p>
 
       <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
-        className="relative w-full sm:mt-[64px] mt-[48px] 2xl:pl-[280px]"
+        variants={fadeIn('up', 'tween', 0.55, 0.8)}
+        className="mt-12 flex w-full flex-col items-center justify-center gap-4 sm:mt-14 sm:w-auto sm:flex-row"
       >
-        <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] sm:-top-[20px] -top-[10px] opacity-80" />
-        <img
-          src="/hero-workflow.svg"
-          alt="Illustration of business systems around an AI operations hub, including inquiries, documents, email, CRM, ERP, reports, and a human review step"
-          className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
-        />
-
-        <a href="#solutions" aria-label="Explore our services">
-          <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10 2xl:-ml-[100px]">
-            <motion.img
-              src="/stamp.svg"
-              alt=""
-              className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain "
-              animate={{ rotate: 360 }}
-              transition={{ repeat: Infinity, duration: 12, ease: 'linear' }}
-            />
-          </div>
+        <a href={discoveryCallUrl} className={`${styles.primaryButton} w-full sm:w-auto`}>
+          Request an AI Health Check
+        </a>
+        <a href="#solutions" className={`${styles.secondaryButton} w-full sm:w-auto`}>
+          Explore Our Services
         </a>
       </motion.div>
+    </motion.div>
+
+    <motion.div
+      initial={{ opacity: 0, y: 36 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.9, delay: 0.15, ease: 'easeOut' }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="hero-visual relative z-10 mx-auto mt-16 w-full max-w-[1680px] sm:mt-24"
+    >
+      <div className="relative aspect-[860/1050] w-full md:aspect-[1920/768]">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcSet="/tai-forge-website-images/tai-forge-hero-mobile.webp"
+            type="image/webp"
+          />
+          <img
+            src="/tai-forge-website-images/tai-forge-hero.webp"
+            alt="A luminous sphere of connected systems on a dark operations floor, surrounded by monitoring panels"
+            width={1920}
+            height={768}
+            fetchPriority="high"
+            decoding="async"
+            className="absolute inset-0 h-full w-full object-cover object-center"
+          />
+        </picture>
+      </div>
     </motion.div>
   </section>
 );
