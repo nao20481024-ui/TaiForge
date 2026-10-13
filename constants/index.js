@@ -56,19 +56,23 @@ export const solutions = [
 
 export const processSteps = [
   {
+    id: 'assess',
     title: 'Assess',
     text: 'We review the agents, automations, and integrations already in place, how your team uses them, and where they need attention.',
   },
   {
-    title: 'Monitor',
-    text: 'We watch for failed runs, broken connections, and outputs that no longer match the task.',
+    id: 'onboard',
+    title: 'Onboard',
+    text: 'We confirm access, agree what to watch, and document how changes are approved before support begins.',
   },
   {
-    title: 'Troubleshoot',
-    text: 'We trace the issue, explain what we find, and work on a fix for the existing setup.',
+    id: 'monitor',
+    title: 'Monitor & Resolve',
+    text: 'We watch for failed runs, broken connections, and outputs that drift, then trace the issue and work on a fix for the current setup.',
   },
   {
-    title: 'Optimize',
+    id: 'improve',
+    title: 'Improve',
     text: 'We refine instructions, steps, and connections as your tools, data, and processes change.',
   },
 ];
@@ -98,36 +102,34 @@ export const differentiators = [
 
 export const useCases = [
   {
-    title: 'An agent answers inconsistently',
-    subtitle: 'Responses no longer match your approved knowledge or the way the team expects the agent to help.',
+    id: 'crm',
+    title: 'Failed CRM synchronization',
+    subtitle: 'Customer records stop matching between a CRM and a connected system, so people work from two versions of the same account.',
   },
   {
-    title: 'A scheduled automation stops',
-    subtitle: 'A recurring workflow fails to finish, and the team needs someone to find where it broke.',
+    id: 'credentials',
+    title: 'Expired API credentials',
+    subtitle: 'A key, token, or login reaches its end date, and the connected work that depended on it starts to fail.',
   },
   {
-    title: 'A connection between tools fails',
-    subtitle: 'Data that used to move between systems stalls after an access, field, or platform change.',
+    id: 'schedule',
+    title: 'Broken scheduled automations',
+    subtitle: 'A job set to run on a schedule misses its window or stops partway through, and the expected result never arrives.',
   },
   {
-    title: 'Instructions are out of date',
-    subtitle: 'Prompts, documents, or business rules no longer reflect how the work is done.',
+    id: 'assistant',
+    title: 'Inconsistent AI assistant responses',
+    subtitle: 'The same kind of question starts producing different answers, or replies drift from the guidance the team approved.',
   },
   {
-    title: 'Exceptions have no clear path',
-    subtitle: 'Edge cases pile up because no one has defined how they should be reviewed and handled.',
+    id: 'cost',
+    title: 'Unexpected AI usage costs',
+    subtitle: 'Usage or spend climbs without a matching change in the work, and the reason is not obvious from day to day.',
   },
   {
-    title: 'A platform change affects a workflow',
-    subtitle: 'An update in a connected app changes behavior your automation or agent depends on.',
-  },
-  {
-    title: 'The team needs a plain explanation',
-    subtitle: 'People want to understand what the system does, what it does not do, and who to contact when it misbehaves.',
-  },
-  {
-    title: 'You want a regular review',
-    subtitle: 'A scheduled look at what is running, what failed, and what is worth adjusting next.',
+    id: 'third-party',
+    title: 'Maintenance of third-party automations',
+    subtitle: 'A workflow built in another tool still needs care after the person who set it up is no longer available.',
   },
 ];
 
