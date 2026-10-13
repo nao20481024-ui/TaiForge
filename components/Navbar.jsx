@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
@@ -18,7 +19,7 @@ const Navbar = () => {
       aria-label="Main navigation"
     >
       <div className="absolute w-[50%] inset-0 gradient-01" />
-      <div className={`${styles.innerWidth} mx-auto flex justify-between items-center gap-8 relative`}>
+      <div className={`${styles.innerWidth} mx-auto flex flex-wrap items-center justify-between gap-x-8 gap-y-4 relative`}>
         <a href="#top" className="flex items-center" aria-label="TAI Forge home">
           <img
             src="/logo.svg"
@@ -27,19 +28,19 @@ const Navbar = () => {
           />
         </a>
 
-        <ul className="lg:flex hidden items-center gap-8">
+        <ul className="hidden shrink-0 items-center gap-x-6 lg:flex">
           {navLinks.map((link) => (
             <li key={link.id}>
-              <a href={`#${link.id}`} className="font-normal text-[16px] text-secondary-white hover:text-white transition-colors">
+              <a href={`#${link.id}`} className="whitespace-nowrap font-normal text-[16px] text-secondary-white transition-colors hover:text-white">
                 {link.title}
               </a>
             </li>
           ))}
         </ul>
 
-        <a href={discoveryCallUrl} className={`${styles.primaryButton} lg:inline-flex hidden !py-3`}>
-          Book a Support Call
-        </a>
+        <Link href={discoveryCallUrl} className={`${styles.primaryButton} hidden shrink-0 whitespace-nowrap !px-5 !py-3 !text-[14px] lg:inline-flex`}>
+          Request an AI Health Check
+        </Link>
 
         <button
           type="button"
@@ -71,13 +72,13 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <a
+          <Link
             href={discoveryCallUrl}
             className={`${styles.primaryButton} mt-6 w-full`}
             onClick={() => setMenuOpen(false)}
           >
-            Book a Support Call
-          </a>
+            Request an AI Health Check
+          </Link>
         </div>
       )}
     </motion.nav>

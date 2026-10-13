@@ -1,11 +1,26 @@
-export const discoveryCallUrl = '#contact';
+export const contactIntents = [
+  { id: 'health-check', label: 'AI Operations Health Check' },
+  { id: 'ai-care', label: 'Quote for AI Care' },
+  { id: 'managed-ai-ops', label: 'Quote for Managed AI Ops' },
+  { id: 'ai-ops-plus', label: 'Quote for AI Ops Plus' },
+];
+
+export const contactIntentUrl = (intent) => `/?intent=${encodeURIComponent(intent)}#contact`;
+
+export const resolveIntent = (intent) => (
+  contactIntents.some((item) => item.id === intent) ? intent : 'health-check'
+);
+
+export const discoveryCallUrl = contactIntentUrl('health-check');
 
 export const navLinks = [
   { id: 'solutions', title: 'Services' },
   { id: 'use-cases', title: 'Support' },
   { id: 'process', title: 'How We Work' },
+  { id: 'plans', title: 'Plans' },
   { id: 'about', title: 'About' },
   { id: 'faq', title: 'FAQ' },
+  { id: 'contact', title: 'Contact' },
 ];
 
 export const challenges = [
@@ -58,7 +73,7 @@ export const processSteps = [
   {
     id: 'assess',
     title: 'Assess',
-    text: 'We review the agents, automations, and integrations already in place, how your team uses them, and where they need attention.',
+    text: 'An AI Operations Health Check reviews the agents, automations, and integrations already in place, how your team uses them, and where they need attention.',
   },
   {
     id: 'onboard',
@@ -133,6 +148,57 @@ export const useCases = [
   },
 ];
 
+export const healthCheck = {
+  eyebrow: 'Introductory assessment',
+  title: 'AI Operations Health Check',
+  summary: 'Before a support plan, we review the agents, automations, and integrations you already run: what they do, where they fail, and what kind of care would help. The health check is how a new engagement starts.',
+  includes: [
+    'An inventory of the workflows your team relies on',
+    'Where failures, drift, or unclear ownership show up',
+    'What monitoring, maintenance, and troubleshooting would involve',
+    'A recommendation on which support plan fits, if ongoing care is useful',
+  ],
+};
+
+export const supportPlans = [
+  {
+    id: 'ai-care',
+    name: 'AI Care',
+    audience: 'Small AI workflow environments',
+    summary: 'For a team that depends on a small number of agents, automations, or integrations and wants them looked after.',
+    includes: [
+      'Monitoring for an agreed, limited set of workflows',
+      'Troubleshooting when a run or connection fails',
+      'Routine maintenance of the current setup',
+      'Notes your team can use when something changes',
+    ],
+  },
+  {
+    id: 'managed-ai-ops',
+    name: 'Managed AI Ops',
+    audience: 'Growing businesses with multiple workflows',
+    summary: 'For a business that relies on several agents, automations, and connected systems, and needs them cared for together.',
+    includes: [
+      'Monitoring across multiple workflows and connections',
+      'Troubleshooting that follows an issue between systems',
+      'Maintenance and operating notes kept current',
+      'Coordination with the people who administer those systems',
+    ],
+  },
+  {
+    id: 'ai-ops-plus',
+    name: 'AI Ops Plus',
+    audience: 'Complex AI operations',
+    summary: 'For organizations where many workflows, teams, and platforms have to keep working together.',
+    includes: [
+      'Support across a complex set of existing AI operations',
+      'Troubleshooting that spans several teams and platforms',
+      'Maintenance of documentation, exceptions, and change notes',
+      'Work on reliability, performance, and usage for systems already in use',
+    ],
+  },
+];
+
 export const faqs = [
   {
     question: 'What does TAI Forge support?',
@@ -152,7 +218,7 @@ export const faqs = [
   },
   {
     question: 'How does support begin?',
-    answer: 'It starts with a conversation about the AI agents, automations, and integrations you rely on, and the issues your team is seeing. From there we agree on what to watch, maintain, and improve.',
+    answer: 'It begins with an AI Operations Health Check. We look at the AI agents, automations, and integrations you rely on and the issues your team is seeing. If ongoing care makes sense, we quote a support plan for that environment.',
   },
   {
     question: 'Will our team stay involved?',

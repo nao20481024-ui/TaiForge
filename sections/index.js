@@ -6,6 +6,8 @@ import Process from './Process';
 import WhyTaiForge from './WhyTaiForge';
 import About from './About';
 import Faq from './Faq';
+import SupportPlans from './SupportPlans';
+import Contact from './Contact';
 
 export {
   Hero,
@@ -16,4 +18,6 @@ export {
   WhyTaiForge,
   About,
   Faq,
+  SupportPlans,
+  Contact,
 };

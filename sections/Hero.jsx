@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import { discoveryCallUrl } from '../constants';
@@ -44,9 +45,9 @@ const Hero = () => (
         variants={fadeIn('up', 'tween', 0.55, 0.8)}
         className="mt-12 flex w-full flex-col items-center justify-center gap-4 sm:mt-14 sm:w-auto sm:flex-row"
       >
-        <a href={discoveryCallUrl} className={`${styles.primaryButton} w-full sm:w-auto`}>
+        <Link href={discoveryCallUrl} className={`${styles.primaryButton} w-full sm:w-auto`}>
           Request an AI Health Check
-        </a>
+        </Link>
         <a href="#solutions" className={`${styles.secondaryButton} w-full sm:w-auto`}>
           Explore Our Services
         </a>

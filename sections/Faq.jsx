@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import { discoveryCallUrl, faqs } from '../constants';
@@ -31,9 +32,9 @@ const Faq = () => {
               Support depends on your systems, access, and how each tool can be monitored or changed. We will be clear about what we can take on.
             </p>
           </div>
-          <a href={discoveryCallUrl} className={`${styles.primaryButton} relative mt-[32px] self-start`}>
-            Book a Support Call
-          </a>
+          <Link href={discoveryCallUrl} className={`${styles.primaryButton} relative mt-[32px] self-start`}>
+            Request an AI Health Check
+          </Link>
         </motion.div>
 
         <motion.div
