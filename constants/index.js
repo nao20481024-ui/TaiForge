@@ -10,24 +10,20 @@ export const navLinks = [
 
 export const challenges = [
   {
-    title: 'Failures go unnoticed',
-    text: 'An agent answers poorly or an automation stops, and the team only finds out from a colleague or customer.',
+    title: 'Silent workflow failures',
+    text: 'An agent or automation stops, and the team only finds out when a colleague or customer is already affected.',
   },
   {
-    title: 'No clear owner',
-    text: 'The person who set the system up has moved on, and no one is sure how it is supposed to work.',
+    title: 'Broken integrations',
+    text: 'A tool update, expired access, or changed field stops information moving between the systems you already use.',
   },
   {
-    title: 'Broken connections',
-    text: 'A tool update, expired access, or changed field stops information moving between systems.',
+    title: 'Unpredictable performance and costs',
+    text: 'Quality, speed, and usage costs shift, with no steady view of what changed or why.',
   },
   {
-    title: 'Out-of-date behavior',
-    text: 'Instructions, knowledge, and business rules drift, so outputs become less useful over time.',
-  },
-  {
-    title: 'Fixes stay reactive',
-    text: 'Issues are patched one by one, without a routine for watching, documenting, and improving what is already running.',
+    title: 'No clear technical support owner',
+    text: 'The person who set the system up has moved on, and no one is accountable when it breaks.',
   },
 ];
 
@@ -35,34 +31,26 @@ export const solutions = [
   {
     id: 'service-watch',
     imgUrl: '/tai-forge-website-images/tai-forge-service-watch.svg',
-    iconUrl: '/icon-target.svg',
     label: 'AI Watch',
-    title: 'See what your AI is doing',
-    description: 'We monitor existing agents, automations, and connected tools for failed runs, unusual outputs, and broken handoffs, and keep a record of what needs attention.',
+    description: 'Monitoring and failure detection',
   },
   {
     id: 'service-resolve',
     imgUrl: '/tai-forge-website-images/tai-forge-service-resolve.svg',
-    iconUrl: '/icon-check.svg',
     label: 'AI Resolve',
-    title: 'Troubleshoot what stops working',
-    description: 'When something fails, we trace the agent, automation, or integration, explain what we find, and work through a fix with your team.',
+    description: 'Troubleshooting and approved repairs',
   },
   {
     id: 'service-maintain',
     imgUrl: '/tai-forge-website-images/tai-forge-service-maintain.svg',
-    iconUrl: '/icon-layers.svg',
     label: 'AI Maintain',
-    title: 'Keep existing systems in care',
-    description: 'We handle upkeep for the systems you already run: access, documentation, exception paths, and the adjustments that keep them aligned with how your team works.',
+    description: 'Ongoing maintenance and documentation',
   },
   {
     id: 'service-optimize',
     imgUrl: '/tai-forge-website-images/tai-forge-service-optimize.svg',
-    iconUrl: '/icon-optimize.svg',
     label: 'AI Optimize',
-    title: 'Improve what you already use',
-    description: 'We review how your AI is used and suggest practical refinements to instructions, steps, and connections as your tools and processes change.',
+    description: 'Performance, cost and reliability improvements',
   },
 ];
 

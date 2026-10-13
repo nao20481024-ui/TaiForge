@@ -22,16 +22,16 @@ const Challenge = () => (
         textStyles="text-center"
       />
       <TitleText
-        title={<>AI does not stay finished <br className="md:block hidden" />after it goes live.</>}
-        textStyles="text-center max-w-[1200px]"
+        title={<>AI works great — <br className="md:block hidden" />until something breaks.</>}
+        textStyles="text-center max-w-[1100px]"
       />
 
       <motion.ul
         variants={fadeIn('up', 'tween', 0.2, 1)}
-        className="mt-[48px] w-full grid lg:grid-cols-5 sm:grid-cols-2 grid-cols-1 gap-5"
+        className="mt-[48px] grid w-full grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"
       >
         {challenges.map((challenge) => (
-          <li key={challenge.title} className="p-6 rounded-[24px] border-[1px] border-white/10 gradient-05">
+          <li key={challenge.title} className="flex h-full flex-col rounded-[24px] border border-white/10 p-6 gradient-05">
             <h3 className="font-bold text-[18px] leading-[26px] text-white">{challenge.title}</h3>
             <p className="mt-[10px] font-normal text-[15px] leading-[24px] text-secondary-white">{challenge.text}</p>
           </li>
@@ -40,9 +40,9 @@ const Challenge = () => (
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.3, 1)}
-        className="mt-[48px] font-normal sm:text-[28px] text-[20px] sm:leading-[44px] leading-[32px] text-center text-secondary-white max-w-[1080px]"
+        className="mt-[48px] max-w-[1080px] text-center font-normal text-[20px] leading-[32px] text-secondary-white sm:text-[28px] sm:leading-[44px]"
       >
-        <span className="font-extrabold text-white">TAI Forge</span> looks after the AI you already run. Through <span className="font-extrabold text-white">monitoring</span>, <span className="font-extrabold text-white">troubleshooting</span>, <span className="font-extrabold text-white">maintenance</span>, and <span className="font-extrabold text-white">optimization</span>, we help your agents, automations, and integrations stay useful as tools and workflows change.
+        <span className="font-extrabold text-white">TAI Forge</span> looks after the AI you already run. We watch for silent failures, repair broken connections, and keep performance, cost, and support ownership clear through <span className="font-extrabold text-white">monitoring</span>, <span className="font-extrabold text-white">troubleshooting</span>, <span className="font-extrabold text-white">maintenance</span>, and <span className="font-extrabold text-white">optimization</span>.
       </motion.p>
 
       <motion.a

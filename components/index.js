@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import { TypingText, TitleText } from './CustomTexts';
-import ExploreCard from './ExploreCard';
+import ServiceCard from './ServiceCard';
 import StartSteps from './StartSteps';
 import NewFeatures from './NewFeatures';
 import InsightCard from './InsightCard';
@@ -13,7 +13,7 @@ export {
   TypingText,
   StartSteps,
   NewFeatures,
-  ExploreCard,
+  ServiceCard,
   InsightCard,
   FaqItem,
   Footer,
