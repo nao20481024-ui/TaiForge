@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import styles from '../styles';
 import { contactIntents, resolveIntent } from '../constants';
 import { validateContact } from '../lib/contact';
+import { deliverContactMessage, readWeb3FormsAccessKey } from '../lib/contactDelivery';
 
 const fieldClass = 'w-full rounded-[16px] border border-white/15 bg-primary-black px-4 py-3 text-[16px] leading-[24px] text-white outline-none transition-colors placeholder:text-white/55 focus:border-forge focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-sky';
 
@@ -74,21 +75,12 @@ const Contact = ({ initialIntent = '' }) => {
     setStatus('submitting');
 
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-        body: JSON.stringify(result.value),
-      });
-      const data = await response.json().catch(() => null);
+      const delivery = await deliverContactMessage(result.value);
 
-      if (!response.ok || data?.delivered !== true) {
+      if (!delivery.delivered) {
         setStatus('error');
         setDeliveredLabel('');
-        setErrors(data?.errors || {});
-        setFormError(data?.error || 'The request was not delivered.');
+        setFormError(delivery.error || 'The request was not delivered.');
         return;
       }
 
@@ -99,7 +91,7 @@ const Contact = ({ initialIntent = '' }) => {
     } catch {
       setStatus('error');
       setDeliveredLabel('');
-      setFormError('The request did not reach the server, so it was not delivered.');
+      setFormError('The request was not delivered. The email service did not respond.');
     }
   };
 
@@ -140,7 +132,10 @@ const Contact = ({ initialIntent = '' }) => {
               </button>
             </div>
           ) : (
-            <form action="/api/contact" method="post" aria-labelledby="contact-heading" className="relative flex flex-col gap-5 [color-scheme:dark]" noValidate onSubmit={handleSubmit}>
+            <form action="https://api.web3forms.com/submit" method="post" aria-labelledby="contact-heading" className="relative flex flex-col gap-5 [color-scheme:dark]" noValidate onSubmit={handleSubmit}>
+              <input type="hidden" name="access_key" value={readWeb3FormsAccessKey()} />
+              <input type="hidden" name="subject" value="TAI Forge website request" />
+              <input type="hidden" name="from_name" value="TAI Forge website" />
               {formError ? (
                 <p
                   ref={errorRef}
@@ -196,7 +191,7 @@ const Contact = ({ initialIntent = '' }) => {
                   {errors.name ? <p id="name-error" className="mt-2 text-[14px] leading-[22px] text-[#ffb4a8]">{errors.name}</p> : null}
                 </div>
                 <div>
-                  <label htmlFor="email" className="mb-2 block font-normal text-[14px] text-white">Work email</label>
+                  <label htmlFor="email" className="mb-2 block font-normal text-[14px] text-white">Email</label>
                   <input
                     id="email"
                     name="email"
@@ -204,7 +199,7 @@ const Contact = ({ initialIntent = '' }) => {
                     autoComplete="email"
                     required
                     inputMode="email"
-                    placeholder="you@company.com"
+                    placeholder="you@email.com"
                     value={fields.email}
                     onChange={updateField('email')}
                     aria-invalid={Boolean(errors.email)}
